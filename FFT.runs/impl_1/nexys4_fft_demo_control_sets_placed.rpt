@@ -1,0 +1,125 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Dec  4 12:08:00 2018
+| Host         : eecs-digital-12 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : report_control_sets -verbose -file nexys4_fft_demo_control_sets_placed.rpt
+| Design       : nexys4_fft_demo
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    72 |
+| Unused register locations in slices containing registers |   283 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             730 |          226 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              19 |            7 |
+| Yes          | No                    | No                     |            5630 |         1196 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             330 |           84 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------+----------------+
+|              Clock Signal             |                                                                  Enable Signal                                                                  |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------+----------------+
+|  clockgen/inst/clk_out1               | db0/p_9_out                                                                                                                                     |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_15_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_18_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_21_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_24_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_27_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_30_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_33_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_42_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_6_out                                                                                                                                     |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_48_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_45_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out1               | db0/p_12_out                                                                                                                                    |                                  |                1 |              1 |
+|  clockgen/inst/clk_out2               |                                                                                                                                                 | display/strobe[1]_i_1_n_0        |                1 |              2 |
+|  clockgen/inst/clk_out2               |                                                                                                                                                 | display/strobe[6]_i_1_n_0        |                1 |              2 |
+|  clockgen/inst/clk_out2               |                                                                                                                                                 | display/counter_reg[0]           |                1 |              2 |
+|  clockgen/inst/clk_out2               |                                                                                                                                                 | display/counter_reg[2]           |                1 |              2 |
+|  clockgen/inst/clk_out1               | xadc_demo/eoc_out                                                                                                                               |                                  |                1 |              4 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/tw_scale_reg_ce_3                                                                                       |                                  |                4 |              5 |
+|  vsync_synchronize/vsync_104mhz_pulse |                                                                                                                                                 |                                  |                2 |              6 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/tw_scale_reg_ce_2                                                                                       |                                  |                6 |              7 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/tw_scale_reg_ce_1                                                                                       |                                  |                4 |              9 |
+|  clockgen/inst/clk_out2               | xvga1/hreset                                                                                                                                    | xvga1/vcount0                    |                3 |             10 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/tw_scale_reg_ce_0                                                                                       |                                  |                9 |             11 |
+|  clockgen/inst/clk_out1               | pwm_out/new_pwm[10]_i_1_n_0                                                                                                                     |                                  |                2 |             11 |
+|  clockgen/inst/clk_out2               |                                                                                                                                                 | xvga1/hreset                     |                3 |             11 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/symbols_out_remaining[11]_i_1_n_0                                                                       |                                  |                2 |             12 |
+|  clockgen/inst/clk_out1               | bram_to_fft_0/send_count                                                                                                                        | vsync_ltp/sending                |                3 |             12 |
+|  clockgen/inst/clk_out1               | bram_to_fft_0/addr[0]_i_1_n_0                                                                                                                   |                                  |                3 |             12 |
+|  clockgen/inst/clk_out1               | osamp16_1/done_osample16                                                                                                                        |                                  |                3 |             12 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/config_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                                        |                                  |                2 |             13 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/has_scale_sch_buffer.scale_sch_int_reg[11][0]                                                           |                                  |                2 |             13 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/tw_scale_reg_ce                                                                                         |                                  |                5 |             13 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/E[0]                                                                                                    |                                  |                3 |             13 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce  |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce  |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce  |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce  |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | osamp16_1/oversample[13]_i_1_n_0                                                                                                                |                                  |                4 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce  |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/proc0_counter/load_cnt_ce                                        |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/DOUT_CNT_CTRL_0/cnt/cnt_ce                                            |                                  |                5 |             14 |
+|  clockgen/inst/clk_out1               | bram_to_fft_0/frame_tdata[31]                                                                                                                   |                                  |                6 |             16 |
+|  vsync_synchronize/vsync_104mhz_pulse | peak_det/peaks0_inferred__0_carry__0_n_0                                                                                                        | peak_det/peaks[15]_i_1_n_0       |                5 |             16 |
+|  clockgen/inst/clk_out2               | fft_histogram/hpeaks[0]_i_2_n_0                                                                                                                 | fft_histogram/hpeaks[0]_i_1_n_0  |                4 |             16 |
+|  clockgen/inst/clk_out1               | fft_mag_i/cordic_0/U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/CE                                                                       |                                  |                5 |             16 |
+|  clockgen/inst/clk_out1               | xadc_demo/eoc_out                                                                                                                               | osamp16_1/oversample[13]_i_1_n_0 |                4 |             16 |
+|  clockgen/inst/clk_out1               | db0/genblk1[16].count[0]_i_1_n_0                                                                                                                | db0/p_12_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[5].count[0]_i_1_n_0                                                                                                                 | db0/p_45_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[15].count[0]_i_1_n_0                                                                                                                | db0/p_15_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[11].count[0]_i_1_n_0                                                                                                                | db0/p_27_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[17].count[0]_i_1_n_0                                                                                                                | db0/p_9_out                      |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[18].count[0]_i_1_n_0                                                                                                                | db0/p_6_out                      |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[10].count[0]_i_1_n_0                                                                                                                | db0/p_30_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[4].count[0]_i_1_n_0                                                                                                                 | db0/p_48_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[14].count[0]_i_1_n_0                                                                                                                | db0/p_18_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[13].count[0]_i_1_n_0                                                                                                                | db0/p_21_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[6].count[0]_i_1_n_0                                                                                                                 | db0/p_42_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[9].count[0]_i_1_n_0                                                                                                                 | db0/p_33_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | db0/genblk1[12].count[0]_i_1_n_0                                                                                                                | db0/p_24_out                     |                5 |             20 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                                       |                                  |                5 |             33 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/p_8_out                                         |                                  |                6 |             33 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/p_4_out5_out                                    |                                  |                5 |             33 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/data_out_channel/data_out_fifo_write                                                                    |                                  |                6 |             44 |
+|  clockgen/inst/clk_out2               |                                                                                                                                                 |                                  |               25 |             53 |
+|  clockgen/inst/clk_out1               |                                                                                                                                                 |                                  |              225 |            742 |
+|  clockgen/inst/clk_out1               | fft_mag_i/xfft_0/U0/i_synth/axi_wrapper/ce_w2c                                                                                                  |                                  |             1264 |           6449 |
++---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------+----------------+
+
+

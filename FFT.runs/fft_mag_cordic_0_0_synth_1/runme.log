@@ -1,0 +1,542 @@
+
+*** Running vivado
+    with args -log fft_mag_cordic_0_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source fft_mag_cordic_0_0.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source fft_mag_cordic_0_0.tcl -notrace
+Command: synth_design -top fft_mag_cordic_0_0 -part xc7a100tcsg324-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31950 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1070.332 ; gain = 175.137 ; free physical = 541 ; free virtual = 11503
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fft_mag_cordic_0_0' [/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/synth/fft_mag_cordic_0_0.vhd:73]
+INFO: [Synth 8-3491] module 'cordic_v6_0_10' declared at '/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/cordic_v6_0_10/hdl/cordic_v6_0.vhd:54' bound to instance 'U0' of component 'cordic_v6_0_10' [/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/synth/fft_mag_cordic_0_0.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'fft_mag_cordic_0_0' (15#1) [/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/synth/fft_mag_cordic_0_0.vhd:73]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_2_viv has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_2_viv has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_2_viv has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_2_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_2_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_2_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized33 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized33 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized33 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized33 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized33 has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized33 has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized33 has unconnected port b_signed
+WARNING: [Synth 8-3331] design delay__parameterized99 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port clk
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized31 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized31 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized31 has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized31 has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized31 has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_viv__parameterized31 has unconnected port C_IN
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[19]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[18]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[17]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[16]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[15]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[14]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[13]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[12]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[11]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[10]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[9]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[8]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[7]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[6]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[5]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[4]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[3]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[2]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[1]
+WARNING: [Synth 8-3331] design cordic_sqrt_mod__parameterized31 has unconnected port rem_out[0]
+WARNING: [Synth 8-3331] design delay__parameterized95 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port clk
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized29 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized29 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized29 has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized29 has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized29 has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_viv__parameterized29 has unconnected port C_IN
+WARNING: [Synth 8-3331] design delay__parameterized89 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized89 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized89 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized89 has unconnected port CLK
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port clk
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized27 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized27 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized27 has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized27 has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_legacy__parameterized27 has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_viv__parameterized27 has unconnected port C_IN
+WARNING: [Synth 8-3331] design delay__parameterized83 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port clk
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_9_lut6_legacy__parameterized25 has unconnected port sclr
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1144.777 ; gain = 249.582 ; free physical = 439 ; free virtual = 11428
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1144.777 ; gain = 249.582 ; free physical = 439 ; free virtual = 11428
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 532 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/fft_mag_cordic_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/fft_mag_cordic_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/afs/athena.mit.edu/user/p/h/phoebepi/FFT/FFT.runs/fft_mag_cordic_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/afs/athena.mit.edu/user/p/h/phoebepi/FFT/FFT.runs/fft_mag_cordic_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1488.598 ; gain = 0.000 ; free physical = 278 ; free virtual = 11267
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 276 ; free virtual = 11265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 276 ; free virtual = 11265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 276 ; free virtual = 11265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 272 ; free virtual = 11262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 272 ; free virtual = 11262
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 249 ; free virtual = 11254
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 249 ; free virtual = 11254
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_nd_int/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[17].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[16].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[2]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[15].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[3]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[4]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[13].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[5]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[12].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[6]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[11].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[7]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[11].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[8]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[12].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[9]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[13].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[10]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[11]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[15].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[12]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[16].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[13]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[17].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[14]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[15][0]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[15][1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[15]' (FDRE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[15][1]' (FDE) to 'U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1] )
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_nd_int/gen_rtl.gen_reg.d_reg_reg) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[15][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[0][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[1][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[2][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[2]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[3][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[3]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[4][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[4]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[5][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[5]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[6][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[6]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[7][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[7]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[8][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[8]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[9][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[9]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[10][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[10]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[11][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[11]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[12][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[12]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[13][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[13]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][0]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[18].gen_post_mid.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[14][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[14]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[15]) is unused and will be removed from module cordic_v6_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (i_synth/gen_sqrt.square_root/gen_iterations[19].gen_last.gen_rem/gen_data_int/gen_rtl.gen_dly.gen_shiftreg.delay_bus_reg[15][1]) is unused and will be removed from module cordic_v6_0_10_viv.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 214 ; free virtual = 11244
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 214 ; free virtual = 11244
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 186 ; free virtual = 11213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 184 ; free virtual = 11212
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     1|
+|2     |LUT2    |   277|
+|3     |LUT3    |   201|
+|4     |LUT4    |     2|
+|5     |MUXCY   |   257|
+|6     |SRL16E  |    24|
+|7     |SRLC32E |    14|
+|8     |XORCY   |   275|
+|9     |FDRE    |   482|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11194
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 178 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1488.598 ; gain = 142.441 ; free physical = 166 ; free virtual = 11194
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.598 ; gain = 593.402 ; free physical = 166 ; free virtual = 11193
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 532 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/fft_mag_cordic_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/ip/fft_mag_cordic_0_0/fft_mag_cordic_0_0_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 93 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 93 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+190 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1488.598 ; gain = 498.844 ; free physical = 161 ; free virtual = 11189
+INFO: [Coretcl 2-1174] Renamed 163 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1520.617 ; gain = 0.000 ; free physical = 160 ; free virtual = 11188
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 18 15:59:07 2018...
