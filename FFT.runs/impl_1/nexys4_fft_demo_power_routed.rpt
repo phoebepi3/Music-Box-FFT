@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date             : Tue Dec  4 12:09:47 2018
+| Date             : Tue Dec  4 12:42:52 2018
 | Host             : eecs-digital-12 running 64-bit Ubuntu 14.04.5 LTS
 | Command          : report_power -file nexys4_fft_demo_power_routed.rpt -pb nexys4_fft_demo_power_summary_routed.pb -rpx nexys4_fft_demo_power_routed.rpx
 | Design           : nexys4_fft_demo
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.363 |
-| Dynamic (W)              | 0.258 |
+| Total On-Chip Power (W)  | 0.357 |
+| Dynamic (W)              | 0.252 |
 | Device Static (W)        | 0.105 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 98.3  |
-| Junction Temperature (C) | 26.7  |
+| Max Ambient (C)          | 98.4  |
+| Junction Temperature (C) | 26.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.022 |       10 |       --- |             --- |
-| Slice Logic              |     0.021 |    14005 |       --- |             --- |
-|   LUT as Logic           |     0.014 |     2957 |     63400 |            4.66 |
+| Clocks                   |     0.021 |       10 |       --- |             --- |
+| Slice Logic              |     0.021 |    14032 |       --- |             --- |
+|   LUT as Logic           |     0.015 |     2985 |     63400 |            4.71 |
 |   Register               |     0.003 |     6709 |    126800 |            5.29 |
 |   CARRY4                 |     0.002 |      681 |     15850 |            4.30 |
 |   LUT as Shift Register  |     0.001 |      831 |     19000 |            4.37 |
 |   Others                 |     0.000 |     1483 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |       32 |     19000 |            0.17 |
-| Signals                  |     0.031 |     8610 |       --- |             --- |
-| Block RAM                |     0.019 |        8 |       135 |            5.93 |
+| Signals                  |     0.029 |     8633 |       --- |             --- |
+| Block RAM                |     0.016 |        8 |       135 |            5.93 |
 | MMCM                     |     0.121 |        1 |         6 |           16.67 |
 | DSPs                     |     0.020 |       17 |       240 |            7.08 |
 | I/O                      |     0.022 |       74 |       210 |           35.24 |
 | XADC                     |     0.002 |        1 |       --- |             --- |
 | Static Power             |     0.105 |          |           |                 |
-| Total                    |     0.363 |          |           |                 |
+| Total                    |     0.357 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.129 |       0.113 |      0.016 |
+| Vccint    |       1.000 |     0.124 |       0.108 |      0.016 |
 | Vccaux    |       1.800 |     0.086 |       0.068 |      0.018 |
 | Vcco33    |       3.300 |     0.010 |       0.006 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -83,7 +83,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.001 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.001 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.021 |       0.001 |      0.020 |
@@ -150,16 +150,16 @@ Table of Contents
 +----------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                         | Power (W) |
 +----------------------------------------------------------------------------------------------+-----------+
-| nexys4_fft_demo                                                                              |     0.258 |
-|   bram1                                                                                      |     0.004 |
-|     U0                                                                                       |     0.004 |
-|       inst_blk_mem_gen                                                                       |     0.004 |
-|         gnbram.gnativebmg.native_blk_mem_gen                                                 |     0.004 |
-|           valid.cstr                                                                         |     0.004 |
-|             ramloop[0].ram.r                                                                 |     0.002 |
-|               prim_noinit.ram                                                                |     0.002 |
-|             ramloop[1].ram.r                                                                 |     0.002 |
-|               prim_noinit.ram                                                                |     0.002 |
+| nexys4_fft_demo                                                                              |     0.252 |
+|   bram1                                                                                      |    <0.001 |
+|     U0                                                                                       |    <0.001 |
+|       inst_blk_mem_gen                                                                       |    <0.001 |
+|         gnbram.gnativebmg.native_blk_mem_gen                                                 |    <0.001 |
+|           valid.cstr                                                                         |    <0.001 |
+|             ramloop[0].ram.r                                                                 |    <0.001 |
+|               prim_noinit.ram                                                                |    <0.001 |
+|             ramloop[1].ram.r                                                                 |    <0.001 |
+|               prim_noinit.ram                                                                |    <0.001 |
 |   bram2                                                                                      |    <0.001 |
 |     U0                                                                                       |    <0.001 |
 |       inst_blk_mem_gen                                                                       |    <0.001 |
@@ -173,7 +173,7 @@ Table of Contents
 |   db0                                                                                        |     0.002 |
 |   display                                                                                    |    <0.001 |
 |   fft_histogram                                                                              |    <0.001 |
-|   fft_mag_i                                                                                  |     0.103 |
+|   fft_mag_i                                                                                  |     0.100 |
 |     axis_register_slice_2                                                                    |    <0.001 |
 |       inst                                                                                   |    <0.001 |
 |         axisc_register_slice_0                                                               |    <0.001 |
@@ -188,8 +188,8 @@ Table of Contents
 |         i_synth                                                                              |     0.012 |
 |           i_has_diplomatic_bag.i_diplomatic_bag                                              |    <0.001 |
 |           i_nd_to_rdy                                                                        |    <0.001 |
-|           i_synth                                                                            |     0.012 |
-|             gen_sqrt.square_root                                                             |     0.012 |
+|           i_synth                                                                            |     0.011 |
+|             gen_sqrt.square_root                                                             |     0.011 |
 |               gen_data_in_int                                                                |    <0.001 |
 |               gen_iterations[11].gen_post_mid.gen_rem                                        |    <0.001 |
 |                 gen_data_int                                                                 |    <0.001 |
@@ -355,10 +355,10 @@ Table of Contents
 |       U0                                                                                     |     0.001 |
 |         i_mult                                                                               |     0.001 |
 |           gDSP.gDSP_only.iDSP                                                                |     0.001 |
-|     xfft_0                                                                                   |     0.089 |
-|       U0                                                                                     |     0.089 |
-|         i_synth                                                                              |     0.089 |
-|           axi_wrapper                                                                        |     0.003 |
+|     xfft_0                                                                                   |     0.086 |
+|       U0                                                                                     |     0.086 |
+|         i_synth                                                                              |     0.086 |
+|           axi_wrapper                                                                        |     0.002 |
 |             config_channel_fifo                                                              |    <0.001 |
 |               gen_non_real_time.data_in_fifo_pt1                                             |    <0.001 |
 |                 fifo0                                                                        |    <0.001 |
@@ -368,8 +368,8 @@ Table of Contents
 |             data_out_channel                                                                 |    <0.001 |
 |               gen_non_real_time.fifo                                                         |    <0.001 |
 |                 fifo0                                                                        |    <0.001 |
-|           xfft_inst                                                                          |     0.086 |
-|             non_floating_point.arch_d.xfft_inst                                              |     0.086 |
+|           xfft_inst                                                                          |     0.084 |
+|             non_floating_point.arch_d.xfft_inst                                              |     0.084 |
 |               DOUT_CNT_CTRL_0                                                                |    <0.001 |
 |                 cnt                                                                          |    <0.001 |
 |                   cnt_addsub                                                                 |    <0.001 |
@@ -574,7 +574,7 @@ Table of Contents
 |                   scale_mux                                                                  |    <0.001 |
 |                 scaling2bits.scaler_re                                                       |    <0.001 |
 |                   scale_mux                                                                  |    <0.001 |
-|               pe_gen[1].natural_order_input.PE                                               |     0.018 |
+|               pe_gen[1].natural_order_input.PE                                               |     0.017 |
 |                 FB_1.BF_1                                                                    |     0.004 |
 |                   BTFLY0                                                                     |    <0.001 |
 |                     logic_bfly_byp.add_i                                                     |    <0.001 |
@@ -1118,7 +1118,7 @@ Table of Contents
 |                   scale_mux                                                                  |    <0.001 |
 |                 scaling2bits.scaler_re                                                       |    <0.001 |
 |                   scale_mux                                                                  |    <0.001 |
-|               pe_gen[4].natural_order_input.PE                                               |     0.012 |
+|               pe_gen[4].natural_order_input.PE                                               |     0.011 |
 |                 FW_1.BF_1                                                                    |     0.002 |
 |                   add_subs.add_i                                                             |    <0.001 |
 |                     adder                                                                    |    <0.001 |
@@ -1153,8 +1153,8 @@ Table of Contents
 |                         mult                                                                 |     0.002 |
 |                           use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay                 |    <0.001 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay                |    <0.001 |
-|                       mult2_preadder_d_plus_a.mult2                                          |     0.001 |
-|                         mult                                                                 |     0.001 |
+|                       mult2_preadder_d_plus_a.mult2                                          |     0.002 |
+|                         mult                                                                 |     0.002 |
 |                       mult3_preadder_d_minus_a.mult3                                         |     0.002 |
 |                         mult                                                                 |     0.002 |
 |                           use_prim.iBdelx[0].iBdely[0].need_delay_line.Bdelay                |    <0.001 |

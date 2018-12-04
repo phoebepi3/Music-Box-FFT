@@ -1,0 +1,139 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+Process ID: 3811
+
+Current time: 	12/4/18 12:40:07 PM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: NAME="Ubuntu"
+Version: 4.2.0-42-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :1
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/var/local/xilinx-local/Vivado/2016.2/tps/lnx64/jre
+
+User name: 	phoebepi
+User home directory: /afs/athena.mit.edu/user/p/h/phoebepi
+User working directory: /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: /var/local/xilinx-local/Vivado
+RDI Data directory: /var/local/xilinx-local/Vivado/2016.2/data
+RDI Bin directory: /var/local/xilinx-local/Vivado/2016.2/bin
+
+Vivado preferences path: /afs/athena.mit.edu/user/p/h/phoebepi/.Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: /afs/athena.mit.edu/user/p/h/phoebepi/.Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	186 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,862 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // l:JideButton (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// [GUI Memory]: 36 MB (+34845kb) [00:00:20]
+// [Engine Memory]: 4,862 MB (+4947003kb) [00:00:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,862 MB. GUI used memory: 22 MB. Current time: 12/4/18 12:40:07 PM EST
+// Elapsed time: 23 seconds
+setFileChooser("/afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.xpr");
+// Opening Vivado Project: /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 MB (+24977kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/afs/athena.mit.edu/user/p/h/phoebepi/FFT' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/var/local/xilinx-local/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: FFT; location: /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT; part: xc7a100tcsg324-3
+// 'i' command handler elapsed time: 29 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 5895.672 ; gain = 125.590 ; free physical = 1829 ; free virtual = 13195 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4_fft_demo (nexys4_fft_demo.v)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4_fft_demo (nexys4_fft_demo.v)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// [GUI Memory]: 72 MB (+8259kb) [00:00:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,039 MB. GUI used memory: 41 MB. Current time: 12/4/18 12:40:29 PM EST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// G:be (cv:JFrame): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // G:be (cv:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Tue Dec  4 12:40:31 2018] Launched synth_1... Run output will be captured here: /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 40 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Tue Dec  4 12:41:12 2018] Launched impl_1... Run output will be captured here: /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.runs/impl_1/runme.log 
+// [GUI Memory]: 81 MB (+5829kb) [00:01:25]
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Implementation Completed: addNotify
+// Elapsed time: 105 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ap:G (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Tue Dec  4 12:43:00 2018] Launched impl_1... Run output will be captured here: /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 116 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,062 MB. GUI used memory: 43 MB. Current time: 12/4/18 12:44:59 PM EST

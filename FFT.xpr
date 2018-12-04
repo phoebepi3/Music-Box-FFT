@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="/afs/athena.mit.edu/user/p/h/phoebepi/FFT/FFT.xpr">
+<Project Version="7" Minor="14" Path="/afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3f56c53e2989437cba5a4acf91347fe7"/>
@@ -44,7 +44,7 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/hdl/utils.v">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/hdl/utils.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -58,76 +58,76 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/hdl/oversampler.v">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/hdl/oversampler.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/hdl/histogram.v">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/hdl/histogram.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/fft_mag.bd">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/bd/fft_mag/fft_mag.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hdl/fft_mag.hwdef"/>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hw_handoff/fft_mag_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hw_handoff/fft_mag.hwh"/>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="fft_mag_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hdl/fft_mag.v"/>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconcat_0_0/fft_mag_xlconcat_0_0.xci">
-          <Proxy FileSetName="fft_mag_xlconcat_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlslice_1_0/fft_mag_xlslice_1_0.xci">
-          <Proxy FileSetName="fft_mag_xlslice_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlslice_0_0/fft_mag_xlslice_0_0.xci">
-          <Proxy FileSetName="fft_mag_xlslice_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconstant_2_0/fft_mag_xlconstant_2_0.xci">
-          <Proxy FileSetName="fft_mag_xlconstant_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconstant_1_0/fft_mag_xlconstant_1_0.xci">
-          <Proxy FileSetName="fft_mag_xlconstant_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconstant_0_0/fft_mag_xlconstant_0_0.xci">
-          <Proxy FileSetName="fft_mag_xlconstant_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xfft_0_0/fft_mag_xfft_0_0.xci">
-          <Proxy FileSetName="fft_mag_xfft_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_mult_gen_1_0/fft_mag_mult_gen_1_0.xci">
-          <Proxy FileSetName="fft_mag_mult_gen_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_mult_gen_0_0/fft_mag_mult_gen_0_0.xci">
-          <Proxy FileSetName="fft_mag_mult_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_cordic_0_0/fft_mag_cordic_0_0.xci">
-          <Proxy FileSetName="fft_mag_cordic_0_0"/>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_axis_register_slice_2_0/fft_mag_axis_register_slice_2_0.xci">
+          <Proxy FileSetName="fft_mag_axis_register_slice_2_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_c_addsub_0_0/fft_mag_c_addsub_0_0.xci">
           <Proxy FileSetName="fft_mag_c_addsub_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_axis_register_slice_2_0/fft_mag_axis_register_slice_2_0.xci">
-          <Proxy FileSetName="fft_mag_axis_register_slice_2_0"/>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_cordic_0_0/fft_mag_cordic_0_0.xci">
+          <Proxy FileSetName="fft_mag_cordic_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_mult_gen_0_0/fft_mag_mult_gen_0_0.xci">
+          <Proxy FileSetName="fft_mag_mult_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_mult_gen_1_0/fft_mag_mult_gen_1_0.xci">
+          <Proxy FileSetName="fft_mag_mult_gen_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xfft_0_0/fft_mag_xfft_0_0.xci">
+          <Proxy FileSetName="fft_mag_xfft_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconstant_0_0/fft_mag_xlconstant_0_0.xci">
+          <Proxy FileSetName="fft_mag_xlconstant_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconstant_1_0/fft_mag_xlconstant_1_0.xci">
+          <Proxy FileSetName="fft_mag_xlconstant_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconstant_2_0/fft_mag_xlconstant_2_0.xci">
+          <Proxy FileSetName="fft_mag_xlconstant_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlslice_0_0/fft_mag_xlslice_0_0.xci">
+          <Proxy FileSetName="fft_mag_xlslice_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlslice_1_0/fft_mag_xlslice_1_0.xci">
+          <Proxy FileSetName="fft_mag_xlslice_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="ip/fft_mag_xlconcat_0_0/fft_mag_xlconcat_0_0.xci">
+          <Proxy FileSetName="fft_mag_xlconcat_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hdl/fft_mag.v"/>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="fft_mag_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hdl/fft_mag.hwdef"/>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hw_handoff/fft_mag_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="fft_mag.bd" FileRelPathName="hw_handoff/fft_mag.hwh"/>
       </File>
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/hdl/bram_to_fft.v">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/hdl/bram_to_fft.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/hdl/nexys4_fft_demo.v">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/hdl/nexys4_fft_demo.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -150,7 +150,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/constraints/Nexys4DDR_Master.xdc">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/constraints/Nexys4DDR_Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -173,7 +173,7 @@
       </Config>
     </FileSet>
     <FileSet Name="bram_fft" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bram_fft">
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/ip/bram_fft/bram_fft.xci">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/ip/bram_fft/bram_fft.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -186,7 +186,7 @@
       </Config>
     </FileSet>
     <FileSet Name="xadc_demo" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xadc_demo">
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/ip/xadc_demo/xadc_demo.xci">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/ip/xadc_demo/xadc_demo.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -199,7 +199,7 @@
       </Config>
     </FileSet>
     <FileSet Name="clk_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_0">
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/ip/clk_wiz_0/clk_wiz_0.xci">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/ip/clk_wiz_0/clk_wiz_0.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -212,7 +212,7 @@
       </Config>
     </FileSet>
     <FileSet Name="bram_frame" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bram_frame">
-      <File Path="$PPRDIR/../Documents/6.111/Nexys4FFTDemo-master/src/ip/bram_frame/bram_frame.xci">
+      <File Path="$PPRDIR/../../Documents/6.111/Nexys4FFTDemo-master/src/ip/bram_frame/bram_frame.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

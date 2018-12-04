@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/afs/athena.mit.edu/user/p/h/phoebepi/FFT/FFT.runs/synth_1'
+HD_PWD='/afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

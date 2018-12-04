@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date         : Tue Dec  4 12:09:43 2018
+| Date         : Tue Dec  4 12:42:49 2018
 | Host         : eecs-digital-12 running 64-bit Ubuntu 14.04.5 LTS
 | Command      : report_drc -file nexys4_fft_demo_drc_routed.rpt -pb nexys4_fft_demo_drc_routed.pb
 | Design       : nexys4_fft_demo
@@ -23,7 +23,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 10
+             Violations found: 8
 
 2. REPORT DETAILS
 -----------------
@@ -68,22 +68,6 @@ Related violations: <none>
 DPOP-1#2 Warning
 PREG Output pipelining  
 DSP fft_mag_i/mult_gen_1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output fft_mag_i/mult_gen_1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-PDRC-153#1 Warning
-Gated clock check  
-Net vsync_synchronize/vsync_104mhz_pulse is a gated clock net sourced by a combinational pin vsync_synchronize/peaks[15]_i_2/O, cell vsync_synchronize/peaks[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT vsync_synchronize/peaks[15]_i_2 is driving clock pin of 22 cells. This could lead to large hold time violations. First few involved cells are:
-    peak_det/peaks_reg[9] {FDRE}
-    peak_det/peaks_reg[8] {FDRE}
-    peak_det/peaks_reg[7] {FDRE}
-    peak_det/peaks_reg[6] {FDRE}
-    peak_det/peaks_reg[5] {FDRE}
-
 Related violations: <none>
 
 PLIO-7#1 Warning

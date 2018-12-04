@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/constraints/Nexys4DDR_Master.xdc rfile:../../../../Documents/6.111/Nexys4FFTDemo-master/src/constraints/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/afs/athena.mit.edu/user/p/h/phoebepi/Documents/6.111/Nexys4FFTDemo-master/src/constraints/Nexys4DDR_Master.xdc rfile:../../../../../Documents/6.111/Nexys4FFTDemo-master/src/constraints/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports CLK100MHZ]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]

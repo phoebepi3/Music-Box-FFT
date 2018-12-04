@@ -42,16 +42,14 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
   open_checkpoint nexys4_fft_demo_routed.dcp
-  set_property webtalk.parent_dir /afs/athena.mit.edu/user/p/h/phoebepi/FFT/FFT.cache/wt [current_project]
+  set_property webtalk.parent_dir /afs/athena.mit.edu/user/p/h/phoebepi/MusicBox/Music-Box-FFT/FFT.cache/wt [current_project]
   catch { write_mem_info -force nexys4_fft_demo.mmi }
   write_bitstream -force nexys4_fft_demo.bit 
   catch { write_sysdef -hwdef nexys4_fft_demo.hwdef -bitfile nexys4_fft_demo.bit -meminfo nexys4_fft_demo.mmi -file nexys4_fft_demo.sysdef }
